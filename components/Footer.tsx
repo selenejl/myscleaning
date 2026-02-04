@@ -16,14 +16,14 @@ const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
           <div className="flex flex-col items-center md:items-start">
             <Logo light size="sm" className="opacity-90" />
             <p className="mt-1.5 text-[10px] uppercase tracking-[0.15em] font-medium text-slate-500">
-              Meticulous Standards • Perth, WA
+              Perth, WA
             </p>
           </div>
-          
+
           {/* Quick Contact - Centered with 'Contact' label */}
           <div className="flex flex-col items-center">
             <span className="text-[10px] uppercase tracking-[0.25em] font-black text-sky-500/80 mb-1">Contact</span>
-            <a 
+            <a
               href={`tel:${PHONE_NUMBER.replace(/\s+/g, '')}`}
               className="text-xl md:text-2xl font-black text-white hover:text-sky-400 transition-colors tracking-tight"
             >
@@ -31,18 +31,18 @@ const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
             </a>
             <span className="text-[10px] uppercase tracking-widest text-slate-600 font-bold mt-1">Available Mon – Sun</span>
           </div>
-          
+
           {/* Secondary Info & Copyright */}
           <div className="flex flex-col items-center md:items-end">
             <div className="flex gap-4 text-[10px] font-bold uppercase tracking-widest mb-1.5">
-              <button 
+              <button
                 onClick={() => onOpenLegal('privacy')}
                 className="text-slate-500 hover:text-sky-400 transition-colors"
               >
                 Privacy
               </button>
               <span className="text-slate-800">•</span>
-              <button 
+              <button
                 onClick={() => onOpenLegal('terms')}
                 className="text-slate-500 hover:text-sky-400 transition-colors"
               >
