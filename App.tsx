@@ -7,7 +7,7 @@ import Reviews from './components/Reviews';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import LegalModals from './components/LegalModals';
-import { PHONE_NUMBER } from './constants';
+import { PHONE_NUMBER, EMAIL_ADDRESS } from './constants';
 import { supabase } from './lib/supabase';
 
 const App: React.FC = () => {
@@ -78,6 +78,23 @@ const App: React.FC = () => {
                         className="text-lg font-black text-slate-900 hover:text-sky-600 transition-colors"
                       >
                         {PHONE_NUMBER}
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-sky-50 flex items-center justify-center text-sky-600">
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">Email Us</p>
+                      <a
+                        href={`mailto:${EMAIL_ADDRESS}`}
+                        className="text-lg font-bold text-slate-900 hover:text-sky-600 transition-colors"
+                      >
+                        {EMAIL_ADDRESS}
                       </a>
                     </div>
                   </div>

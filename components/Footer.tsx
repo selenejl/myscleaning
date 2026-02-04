@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BUSINESS_NAME, PHONE_NUMBER } from '../constants';
+import { BUSINESS_NAME, PHONE_NUMBER, EMAIL_ADDRESS } from '../constants';
 import Logo from './Logo';
 
 interface FooterProps {
@@ -29,7 +29,13 @@ const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
             >
               {PHONE_NUMBER}
             </a>
-            <span className="text-[10px] uppercase tracking-widest text-slate-600 font-bold mt-1">Available Mon – Sun</span>
+            <a
+              href={`mailto:${EMAIL_ADDRESS}`}
+              className="mt-1 text-sm font-bold text-slate-400 hover:text-sky-400 transition-colors tracking-wide"
+            >
+              {EMAIL_ADDRESS}
+            </a>
+            <span className="text-[10px] uppercase tracking-widest text-slate-600 font-bold mt-2">Available Mon – Sun</span>
           </div>
 
           {/* Secondary Info & Copyright */}
