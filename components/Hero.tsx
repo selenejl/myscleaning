@@ -137,8 +137,8 @@ const Hero: React.FC = () => {
                   <Award className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
-                  <p className="text-xl md:text-2xl font-black text-slate-900">Perth</p>
-                  <p className="text-[10px] md:text-sm text-slate-500 font-bold uppercase tracking-wider">Local Specialists</p>
+                  <p className="text-[10px] md:text-sm text-slate-500 font-bold uppercase tracking-wider">Trusted by</p>
+                  <p className="text-xl md:text-2xl font-black text-slate-900">Perth Locals</p>
                 </div>
               </div>
             </div>
