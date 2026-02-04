@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-  Home, 
-  Sparkles, 
-  ArrowRightLeft, 
-  Clock, 
-  ShieldCheck, 
-  Star, 
+import {
+  Home,
+  Sparkles,
+  ArrowRightLeft,
+  Clock,
+  ShieldCheck,
+  Star,
   CheckCircle2,
   SearchCheck,
   Zap,
@@ -19,7 +19,7 @@ import {
 import { CleaningServiceType, ServiceItem, FeatureItem } from './types';
 
 export const BUSINESS_NAME = "MYS Cleaning";
-export const PHONE_NUMBER = "+61 475 979 672";
+export const PHONE_NUMBER = "+61 412 760 682";
 export const EMAIL_ADDRESS = "hello@myscleaning.com.au";
 
 export const SERVICES: ServiceItem[] = [
